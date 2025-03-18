@@ -1,0 +1,29 @@
+public class PangramChecker {
+  public boolean check(String sentence){
+    String str = "abcdefghijklmnopqrstuvwxyz";
+    char[] c = str.toCharArray();
+    boolean[] exists = new boolean[26];
+    
+    for (char i : sentence.toLowerCase().toCharArray()){
+      for (char j : c){
+        if (i==j){
+          exists[j - 'a'] = true;
+        }
+      }
+    }
+    
+    int counter = 0;
+    for (boolean b : exists) {
+      if (!b){
+        counter++;
+      }
+    }
+    
+    if (counter>0){
+      return false;
+    } else {
+      return true;
+    }
+    
+  }
+}
