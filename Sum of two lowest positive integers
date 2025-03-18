@@ -2,9 +2,10 @@ import java.util.Arrays;
 
 class Kata{
   public static long sumTwoSmallestNumbers(long[] numbers) {
-    int lowSum;
+    numbers = Arrays.stream(numbers)
+                      .filter(n -> n >= 0)
+                      .toArray();  
     Arrays.sort(numbers);
-    lowSum = (int)(numbers[0]) + (int)(numbers[1]);
-    return lowSum; 
+    return numbers[0] + numbers[1];
   }             
 }
