@@ -1,0 +1,14 @@
+public class Maskify {
+    public static String maskify(String str) {
+      if (str.length()<=4){
+        return str;
+      } 
+      int maskedPart = str.length() - 4;
+      StringBuilder hidden = new StringBuilder();
+      for (int i = 0; i< maskedPart; i++){
+        hidden.append('#');
+      }
+      hidden.append(str.substring(str.length() - 4));
+      return hidden.toString();
+    }  
+}
