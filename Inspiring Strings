@@ -1,0 +1,14 @@
+public class Kata {
+  public static String longestWord(String wordString) {
+    String[] words = wordString.split("\\s+");
+    int max = 0;
+    String maxWord = "";
+    for (String word : words) {
+      if (word.length()>=max) {
+        max = word.length();
+        maxWord = word;
+      }
+    } 
+  return maxWord;
+  }
+}
