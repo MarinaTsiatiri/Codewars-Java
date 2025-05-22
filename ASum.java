@@ -1,3 +1,4 @@
+// Build a pile of Cubes
 public class ASum {
 	public static long findNb(long m) {
 		long check = 0;
