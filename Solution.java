@@ -1,3 +1,4 @@
+// You only need one - Beginner
 public class Solution {
 
     public static boolean check(Object[] a, Object x) {
