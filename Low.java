@@ -1,6 +1,8 @@
+// Sum of two lowest positive integers
+
 import java.util.Arrays;
 
-class Kata{
+class Low{
   public static long sumTwoSmallestNumbers(long[] numbers) {
     numbers = Arrays.stream(numbers)
                       .filter(n -> n >= 0)
