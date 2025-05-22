@@ -1,4 +1,5 @@
-  public class Sum{
+// Beginner Series #3 Sum of Numbers
+public class Sum{
      public int GetSum(int a, int b){
       if(a==b){return a;}
       int min = Math.min(a,b);
